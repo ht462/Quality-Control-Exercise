@@ -39,10 +39,10 @@ pip install -r requirements.txt
 
     
 ## Run the Rock-Paper-Scissors Game
- ```sh
+```sh
  # run this to play a game of rock paper scissors
 
-python -m app.rps
+python -m apps.rps
 ```
 
 ## Run the Stocks Dashboard
@@ -61,6 +61,11 @@ ALPHAVANTAGE_API_KEY="______________"
 
 ## Run Test
 ```sh
-# find all the tests and run them by using this line of code:
-pytest
+# Test rock paper scissors game with this line
+
+pytest test/test_rps.py
+
+# Test stock dashboard with this line(issue with plotly module, currently working with prof on it)
+
+pytest test/test_stocks.py
 ```
