@@ -1,63 +1,56 @@
+# Quality Control — Python Software Project
 
-A Python project demonstrating **software quality control** using a simple Rock-Paper-Scissors game.  
-This project shows how to structure code, manage dependencies, and test functionality with `pytest`.
+A Python project demonstrating "software quality control" using a simple Rock-Paper-Scissors game and a Stocks Dashboard.  
 
----
-
-## 📘 Overview
+##  Overview
 
 The repository contains:
-- **apps/rps.py** – main game logic  
-- **test/test_rps.py** – automated test cases  
-- **pytest.ini** – test configuration  
-- **requirements.txt** – project dependencies  
+
+- `apps/rps.py` — main Rock-Paper-Scissors game logic  
+- `apps/stocks.py` — stocks dashboard visualization  
+- `test/test_rps.py` — automated test cases  
+- `requirements.txt` — project dependencies  
+- `.env` — API key configuration for stocks data  
+- `.github/workflows/python-app.yml` — CI workflow for automated testing
 
 ---
 
 ## Setup Instructions
+    ### Create a Virtual Environment
+    ```bash
+    conda create -n quality-control python=3.11
+    ```
 
-### 1. Create a virtual environment
-```bash
-conda create -n my-first-env-fall-2025 python=3.11
-### 2. activeate a virtual environment
-conda activate my-first-env-fall-2025
+    ### Activate Virtual Environment
+    ```bash
+    conda activate quality-control
+    ```
 
-### 3. instal dependencies
-pip install -r requirements.txt
+    ### Install dependencies: pandas, python-dotenv, plotly, pytest
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-including: 
-pandas
-python-dotenv
-plotly
-pytest
+    
+## Run the Rock-Paper-Scissors Game
+    ```bash
+    python -m apps.rps
+    ``` 
 
-### 4. Game Logic
-def determine_winner(u, c):
-    if u == c:
-        return "TIE GAME"
-    elif (u == "rock" and c == "scissors") or \
-         (u == "paper" and c == "rock") or \
-         (u == "scissors" and c == "paper"):
-        return "USER WINS"
-    else:
-        return "COMPUTER WINS"
+## Run the Stocks Dashboard
+    ```bash
+    python -m apps.stocks    
+    ``` 
 
-### 5. Run Game
-python -m apps.rps
+## Secret Credentials
+    # this is the ".env" file
 
-### 6. Testing
+    # replace "______________" with your premium key
+    ```
+    ALPHAVANTAGE_API_KEY="______________"
+    ```
 
-from apps.rps import determine_winner
-
-def test_winners():
-    assert determine_winner("rock", "rock") == "TIE GAME"
-    assert determine_winner("rock", "paper") == "COMPUTER WINS"
-    assert determine_winner("rock", "scissors") == "USER WINS"
-    assert determine_winner("paper", "rock") == "USER WINS"
-    assert determine_winner("scissors", "rock") == "COMPUTER WINS"
-### 7. Run test
-
-pytest -v
-
-
-
+## Run Test
+    ```
+    pytest
+    ```

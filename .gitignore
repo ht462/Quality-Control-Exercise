@@ -10,3 +10,4 @@ __pycache__
 # hidden file on mac:
 .DS_Store
 
+.env
