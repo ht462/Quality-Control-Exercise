@@ -21,11 +21,8 @@ Create and activate a virtual environment:
 
 ```sh
 #Use this line to create an environment
-
 conda create -n my-first-env-2025 python=3.11
-
 #Use this line to activate the environment
-
 conda activate my-first-env-2025
 ```
 
@@ -42,7 +39,7 @@ pip install -r requirements.txt
 
     
 ## Run the Rock-Paper-Scissors Game
- ```sh
+```sh
  # run this to play a game of rock paper scissors
 
 python -m apps.rps
@@ -71,5 +68,4 @@ pytest test/test_rps.py
 # Test stock dashboard with this line(issue with plotly module, currently working with prof on it)
 
 pytest test/test_stocks.py
-
 ```
