@@ -1,0 +1,9 @@
+# this is the "requirements.txt" file...
+
+#for stocks bonus challenge
+pandas
+python-dotenv
+plotly
+
+# testing:
+pytest

@@ -1,8 +1,6 @@
 # Quality Control
 Quality control practice for rock paper scissors game
 
-more.content.
-#usage
 Create a virtual environment:
 
 ```sh
@@ -19,3 +17,17 @@ Install package dependencies:
 
 ```sh
 pip install -r requirements.txt
+
+## Testing
+
+Run tests:
+
+```sh
+pytest
+```
+
+# rock paper scissor game
+python -m apps.rps
+
+
+
