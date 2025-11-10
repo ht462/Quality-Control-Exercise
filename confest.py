@@ -1,6 +1,6 @@
 #this confest.py file help pytest understand structure of the repo
 
-from app.rps import determine_winner
+from apps.rps import determine_winner
 
 def test_winners():
     # tests for all edge cases:
