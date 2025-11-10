@@ -15,41 +15,51 @@ The repository contains:
 
 ---
 
-## Setup Instructions
-    Create a Virtual Environment
-    ```sh
-    conda create -n quality-control python=3.11
-    ```
+## Setup
 
-    Activate Virtual Environment
-    ```sh
-    conda activate quality-control
-    ```
+Create and activate a virtual environment:
 
-    Install dependencies: pandas, python-dotenv, plotly, pytest
-    ```sh
-    pip install -r requirements.txt
-    ```
+```sh
+conda create -n my-first-env-2025 python=3.11
+
+conda activate my-first-env-2025
+```
+
+
+Install packages:
+
+```sh
+# pip install requirements
+
+pip install -r requirements.txt
+``` 
+ 
+   
 
     
 ## Run the Rock-Paper-Scissors Game
-    ```sh
-    python -m apps.rps
-    ``` 
+ ```sh
+ # run this to play a game of rock paper scissors
+
+python -m app.rps
+```
 
 ## Run the Stocks Dashboard
     ```sh
+    #run this to access a stock's information and generate chart
+
     python -m apps.stocks    
     ``` 
 
 ## Secret Credentials
-    this is the ".env" file
-    replace "______________" with your premium key
-    ```sh
-    ALPHAVANTAGE_API_KEY="______________"
-    ```
+```sh
+ # This is in the ".env" file. Replace "______________" with your premium key
+
+ALPHAVANTAGE_API_KEY="______________"
+```
 
 ## Run Test
-    ```sh
-    pytest
-    ```
+```sh
+# find all the tests and run them:
+pytest
+```
