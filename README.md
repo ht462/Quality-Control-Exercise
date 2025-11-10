@@ -20,8 +20,9 @@ The repository contains:
 Create and activate a virtual environment:
 
 ```sh
+#Use this line to create an environment
 conda create -n my-first-env-2025 python=3.11
-
+#Use this line to activate the environment
 conda activate my-first-env-2025
 ```
 
@@ -45,11 +46,11 @@ python -m app.rps
 ```
 
 ## Run the Stocks Dashboard
-    ```sh
-    #run this to access a stock's information and generate chart
+```sh
+#run this to access a stock's information and generate dashboard
 
-    python -m apps.stocks    
-    ``` 
+python -m apps.stocks    
+``` 
 
 ## Secret Credentials
 ```sh
@@ -60,6 +61,6 @@ ALPHAVANTAGE_API_KEY="______________"
 
 ## Run Test
 ```sh
-# find all the tests and run them:
+# find all the tests and run them by using this line of code:
 pytest
 ```
