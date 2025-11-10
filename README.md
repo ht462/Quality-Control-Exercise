@@ -45,7 +45,7 @@ pip install -r requirements.txt
  ```sh
  # run this to play a game of rock paper scissors
 
-python -m app.rps
+python -m apps.rps
 ```
 
 ## Run the Stocks Dashboard
