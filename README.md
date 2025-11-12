@@ -37,7 +37,6 @@ pip install -r requirements.txt
  
    
 
-    
 ## Run the Rock-Paper-Scissors Game
 ```sh
  # run this to play a game of rock paper scissors
