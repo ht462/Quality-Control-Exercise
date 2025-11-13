@@ -36,7 +36,6 @@ pip install -r requirements.txt
 ``` 
  
    
-
 ## Run the Rock-Paper-Scissors Game
 ```sh
  # run this to play a game of rock paper scissors
@@ -56,6 +55,10 @@ python -m apps.stocks
  # This is in the ".env" file. Replace "______________" with your premium key
 
 ALPHAVANTAGE_API_KEY="______________"
+
+# also tell flask where our wen app is defined
+FLASK_APP = web_app
+
 ```
 
 ## Run Test
@@ -67,4 +70,18 @@ pytest test/test_rps.py
 # Test stock dashboard with this line(issue with plotly module, currently working with prof on it)
 
 pytest test/test_stocks.py
+```
+### Web APP
+
+Run the web app (then view in the browser at http://localhost:5000/):
+
+```sh
+# Mac Os:
+FLASK_APP=web_app flask run
+
+# windows os:
+
+FLASK_APP=web_app
+flask run
+
 ```
