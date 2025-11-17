@@ -10,13 +10,13 @@ home_routes = Blueprint("home_routes", __name__)
 def index():
     print("HOME...")
     return "Welcome Home"
-    #return render_template("home.html")
+    return render_template("home.html")
 
 @home_routes.route("/about")
 def about():
     print("ABOUT...")
     return "About Me"
-    #return render_template("about.html")
+    return render_template("about.html")
 
 @home_routes.route("/hello")
 def hello_world():
@@ -32,5 +32,7 @@ def hello_world():
     name = url_params.get("name") or "World"
 
     message = f"Hello, {name}!"
-    return message
-    #return render_template("hello.html", message=message)
+
+    #return message
+    return render_template("hello.html", message=message, x=5, y=20)
+
