@@ -73,15 +73,19 @@ pytest test/test_stocks.py
 ```
 ### Web APP
 
-Run the web app (then view in the browser at http://localhost:5000/):
+Run the web app (then view in the browser at 
+http://localhost:5000/):
 
 ```sh
+#if we have the FLASK_APP=web_app env var in the ".env" file:
+flask run
+
 # Mac Os:
 FLASK_APP=web_app flask run
 
 # windows os:
 
-FLASK_APP=web_app
+export FLASK_APP=web_app
 flask run
 
 ```
