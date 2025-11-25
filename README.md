@@ -88,4 +88,10 @@ FLASK_APP=web_app flask run
 export FLASK_APP=web_app
 flask run
 
+# To access production server go to: 
+https://quality-control-exercise-final-n5kh.onrender.com
+
+
 ```
+
+
